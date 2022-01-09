@@ -1,0 +1,2 @@
+default: --format progress --format html --out=HTML_report/execution_report.html
+#-f pretty -f json -o results/temp/JSON/results.json
