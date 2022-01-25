@@ -1,0 +1,29 @@
+@if (@CodeSection == @Batch) @then
+@echo off
+    set SendKeys=CScript //nologo //E:JScript "%~F0"
+    cls
+    color 0a
+	    timeout /t 3 /nobreak >nul
+    %SendKeys% {Enter}
+    %SendKeys% {CAPSLOCK}
+	%SendKeys% {P}
+    %SendKeys% {l}
+    %SendKeys% {e}
+    %SendKeys% {a}
+    %SendKeys% {s}
+    %SendKeys% {e}
+    %SendKeys% {" "}
+    %SendKeys% {L}
+    %SendKeys% {e}
+    %SendKeys% {t}
+    %SendKeys% {" "}
+    %SendKeys% {M}
+    %SendKeys% {e}
+    %SendKeys% {" "}
+    %SendKeys% {D}
+    %SendKeys% {i}
+    %SendKeys% {e}
+    %SendKeys% {DOWN}
+@end
+var WshShell = WScript.CreateObject("WScript.Shell");
+WshShell.SendKeys(WScript.Arguments(0));
