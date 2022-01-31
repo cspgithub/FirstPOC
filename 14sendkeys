@@ -1,5 +1,9 @@
 @if (@CodeSection == @Batch) @then
 
+
+https://gist.github.com/MatthewSteeples/ce7114b4d3488fc49b6a
+
+
 @echo off
     set SendKeys=CScript //nologo //E:JScript "%~F0"
     cls
